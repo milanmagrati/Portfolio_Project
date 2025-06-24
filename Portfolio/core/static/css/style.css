@@ -1,0 +1,9 @@
+h1{
+    background-color: rgb(60, 7, 233);
+    background: linear-gradient(to right,red,blue,white,green);
+
+}
+
+.navbar{
+background-color: yellow;
+}
