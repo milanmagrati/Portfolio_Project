@@ -4,6 +4,23 @@ h1{
 
 }
 
-.navbar{
-background-color: yellow;
+.hero{
+    background-image: url('../images/joke.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+        
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+.hero_image{
+    animation: up-down 3s ease-in-out infinite alternate-reverse;
 }
