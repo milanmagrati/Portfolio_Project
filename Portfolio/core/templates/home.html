@@ -31,14 +31,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto gap-3 mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Team</a>
+          <a class="nav-link active fw-bold" href="#">My Team</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portfolio
           </a>
           <ul class="dropdown-menu">
             <h3>folio</h3>
@@ -90,7 +90,155 @@
       <!-- hero section end -->
 
       </div>
+
+      <!-- portfolio section start -->
+       <section class="my-4">
+
+        <h1 class = "text-center fw-bold text-ingo"> PortFolio</h1>
+        <P class=" text-center fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem!</P>
+        
+        <div class=" d-flex">
+
+          <hr class="flex-grow-1 border-3 opacity-75 border-danger">
+          <div class="px-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <hr class = "flex-grow-1 border-3 opacity-75 border-danger">
+        </div>
+
+        <div class = "container">
+          <!-- first row  -->
+
+          <div class = "row">
+             <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+           <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+          </div>
+            </div>
+
+            <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+           <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+          </div>
+            </div>
+
+
+            <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+           <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+          </div>
+            </div>
+
+          </div>
+
+           <div class = "row">
+             <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/7.jpg' %}" class="card-img-top  image_animation" alt="...">
+           <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+          </div>
+            </div>
+
+            <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+           <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+          </div>
+            </div>
+
+
+            <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/7.jpg' %}" class="card-img-top  image_animation" alt="...">
+           <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+          </div>
+            </div>
+
+
+
+
+          </div>
+        
+
+          
+
+
+          
+          
+        </div>
       
+      </section>
+       <!-- portfolio section end -->
+
+
+       <!-- my team section start -->
+       
+       <section>
+        <div class = "team text-center">
+          <h2 class = "fw-bold text-capitalize text-info"> My Amazing Team</h2>
+          <hr class ="w-25 mx-auto border-3 opacity-75">
+
+          <div class="container">
+            <div class ="row">
+              <div class="col-4">
+
+                <img src="{% static 'images/mil.jpeg' %}"   class="img-fluid team_img" alt="">
+                  
+                <h3>Er. Milan Magrati</h3>
+                <p>Python Developer</p>
+
+                <div>
+                  <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
+                  <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
+
+                </div>
+              
+
+              </div>
+
+                  <div class="col-4">
+
+                <img src="{% static 'images/mil.jpeg' %}"   class="img-fluid team_img" alt="">
+                  
+                <h3>Er. Milan Magrati</h3>
+                <p>Python Developer</p>
+
+                <div>
+                  <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
+                  <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
+
+                </div>
+              
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+       </section>
+
+
+       <!-- my team section end -->
+
 
      <!-- cdn js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

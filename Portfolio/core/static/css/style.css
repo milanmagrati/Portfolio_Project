@@ -24,3 +24,23 @@ h1{
 .hero_image{
     animation: up-down 3s ease-in-out infinite alternate-reverse;
 }
+
+.image_animation{
+    transition: all 0.12s ease-in-out;
+}
+.image_animation:hover
+
+{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+.team_img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border:5px solid blue;
+    
+
+}
