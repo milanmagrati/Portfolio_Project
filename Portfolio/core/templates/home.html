@@ -1,247 +1,384 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font-awesome CDN link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font-awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <!-- CDN link -->
-  
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
-<!-- custom css -->
+  <!-- CDN link -->
 
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- custom css -->
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
+
 <body>
-  <div class = "hero">
+  <div class="hero">
     <!-- navbar section start -->
-     <nav class="navbar navbar-expand-lg " data-bs-theme = "dark">
-  <div class="container ">
-    <a class="navbar-brand" href="#">  
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="container ">
+        <a class="navbar-brand" href="#">
           <img src="{% static 'images/mmm.png' %}" height="50px" width="50px " alt="">
-</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto gap-3 mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="#">My Team</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Portfolio
-          </a>
-          <ul class="dropdown-menu">
-            <h3>folio</h3>
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#">My Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Portfolio
+              </a>
+              <ul class="dropdown-menu">
+                <h4>folio</h4>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
           </ul>
-        </li>
-        
-      </ul>
-     <a href="https://www.facebook.com/milan.magrati.683341/" target="_blank" ><div class ="btn btn-primary mx-2 rounded-circle"><i class="fa-brands fa-facebook"></i></div></a>
-     <a href="https://www.instagram.com/milan98066/" target="_blank"><div class ="btn btn-warning rounded-circle "><i class="fa-brands fa-instagram"></i></div></a>
+          <a href="https://www.facebook.com/milan.magrati.683341/" target="_blank">
+            <div class="btn btn-primary mx-2 rounded-circle"><i class="fa-brands fa-facebook"></i></div>
+          </a>
+          <a href="https://www.instagram.com/milan98066/" target="_blank">
+            <div class="btn btn-warning rounded-circle "><i class="fa-brands fa-instagram"></i></div>
+          </a>
 
 
-      <div class = "vr border mx-2 border-danger opacity-75"></div>
-      <div>
-        <button type="button" class="btn btn-outline-danger btn-primary rounded-pill border-2">Contact</button>
+          <div class="vr border mx-2 border-danger opacity-75"></div>
+          <div>
+            <button type="button" class="btn btn-outline-danger btn-primary rounded-pill border-2">Contact</button>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- hero section start -->
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-6 my-4">
+          <h3 class="fw-bold text-capitalize text-white" > Unlock the power of design and development</h3>
+          <p class="text-white fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quod nisi
+            voluptas veniam libero, optio rerum? Non saepe quo molestias sed debitis perferendis totam eius, velit
+            corrupti fugiat, corporis excepturi?</p>
+
+          <button class="btn btn-lg fw-bold btn-danger" data-bs-toggle="tooltip" data-bs-title="learn more" data-bs-placement="left"  data-bs-custom-class="custom-tooltip"
+ > Get Started</button>
+          <button class="btn btn-lg fw-bold btn-outline-success">Request Demo</button>
+        </div>
+
+        <div class="col-6">
+          <img src="{% static 'images/hero.png' %}" alt="" class="img-fluid hero_image">
+        </div>
+
+
 
       </div>
-     
+    </div>
+
+  </div>
+
+  <!-- hero section end -->
+
+  </div>
+
+  <!-- portfolio section start -->
+  <section class="my-4">
+
+    <h1 class="text-center fw-bold text-info"> PortFolio</h1>
+    <P class=" text-center fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem!
+    </P>
+
+    <div class=" d-flex">
+
+      <hr class="flex-grow-1 border-3 opacity-75 border-danger">
+      <div class="px-3">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <hr class="flex-grow-1 border-3 opacity-75 border-danger">
+    </div>
+
+    <div class="container">
+      <!-- first row  -->
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.jpg' %}" class="card-img-top  image_animation" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/7.jpg' %}" class="card-img-top  image_animation" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+  <!-- portfolio section end -->
+
+
+  <!-- my team section start -->
+
+  <section>
+    <div class="team text-center">
+      <h2 class="fw-bold text-capitalize text-info"> My Amazing Team</h2>
+      <hr class="w-25 mx-auto border-3 opacity-75">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+
+            <img src="{% static 'images/mil.jpeg' %}" class="img-fluid team_img" alt="">
+
+            <h3>Er. Milan Magrati</h3>
+            <p>Python Developer</p>
+
+            <div>
+              <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
+              <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-4">
+
+            <img src="{% static 'images/mil.jpeg' %}" class="img-fluid team_img" alt="">
+
+            <h3>Er. Milan Magrati</h3>
+            <p>Python Developer</p>
+
+            <div>
+              <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
+              <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="col-4">
+
+            <img src="{% static 'images/mil.jpeg' %}" class="img-fluid team_img" alt="">
+
+            <h3>Er. Milan Magrati</h3>
+            <p>Python Developer</p>
+
+            <div>
+              <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
+              <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- my team section end -->
+
+
+  <!-- service section start  -->
+
+  <section  class="my-4">
+    <h2 class="text-center fw-bold text-info"> Services</h2>
+    <hr class="w-25 mx-auto border-3 opacity-75 text-danger">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- carousel start -->
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/hero.png' %}" class="d-block w-100 service_image"  w-100 alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+        <h5>First</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/joke.png' %}" class="d-block w-100 service_image"  alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/joke.jpeg' %}" class="d-block w-100 service_image" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
     </div>
   </div>
-</nav>
-     <!-- navbar section end -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+         <!-- carousel end -->
 
-     <!-- hero section start -->
-      <div class = "container my-4">
-        <div class = "row">
-          <div class="col-6 my-4">
-            <h3 class ="fw-bold text-capitalize text-white"> Unlock the power of design and development</h3>
-            <p class="text-white fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quod nisi voluptas veniam libero, optio rerum? Non saepe quo molestias sed debitis perferendis totam eius, velit corrupti fugiat, corporis excepturi?</p>
-
-           <button class = "btn btn-lg fw-bold btn-danger"> Get Started</button>
-           <button class = "btn btn-lg fw-bold btn-outline-success">Request Demo</button>
-         </div>
-
-         <div class="col-6">
-            <img src="{% static 'images/hero.png' %}" alt= "" class = "img-fluid hero_image">
-          </div>
-
-          
-
-         </div>
         </div>
-
       </div>
-      
-      <!-- hero section end -->
-
-      </div>
-
-      <!-- portfolio section start -->
-       <section class="my-4">
-
-        <h1 class = "text-center fw-bold text-ingo"> PortFolio</h1>
-        <P class=" text-center fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem!</P>
-        
-        <div class=" d-flex">
-
-          <hr class="flex-grow-1 border-3 opacity-75 border-danger">
-          <div class="px-3">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <hr class = "flex-grow-1 border-3 opacity-75 border-danger">
-        </div>
-
-        <div class = "container">
-          <!-- first row  -->
-
-          <div class = "row">
-             <div class="col-4">
-          <div class="card" style="width: 18rem;">
-          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
-           <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </div>
-          </div>
-            </div>
-
-            <div class="col-4">
-          <div class="card" style="width: 18rem;">
-          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
-           <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </div>
-          </div>
-            </div>
+    </div>
 
 
-            <div class="col-4">
-          <div class="card" style="width: 18rem;">
-          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
-           <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </div>
-          </div>
-            </div>
+  </section>
 
-          </div>
-
-           <div class = "row">
-             <div class="col-4">
-          <div class="card" style="width: 18rem;">
-          <img src="{% static 'images/7.jpg' %}" class="card-img-top  image_animation" alt="...">
-           <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </div>
-          </div>
-            </div>
-
-            <div class="col-4">
-          <div class="card" style="width: 18rem;">
-          <img src="{% static 'images/7.jpg' %}" class="card-img-top image_animation" alt="...">
-           <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </div>
-          </div>
-            </div>
+  <!-- service section end  -->
+   
 
 
-            <div class="col-4">
-          <div class="card" style="width: 18rem;">
-          <img src="{% static 'images/7.jpg' %}" class="card-img-top  image_animation" alt="...">
-           <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </div>
-          </div>
-            </div>
+  <!-- Mail section start  -->
+    
+  <section class="my-4">
+<div class="container ho">
+
+  <div class="row">
+    <div class="col-9 d-flex justify-content-center align-items-center flex-column">
+      <h3 class="text-center fw-bold text-info">want to know more about us </h3>
+      <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="your email address" aria-label="Recipient’s username" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send Mail</button>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, maxime?</p>
+    </div>
+    <div class="col-3">
+
+      <img src="{% static 'images/hero.png' %}" class="img-fluid"  alt="">
+    </div>
+  </div>
+</div>
+
+  </section>
 
 
 
-
-          </div>
-        
-
-          
+  <!-- Mail section end  -->
 
 
-          
-          
-        </div>
-      
-      </section>
-       <!-- portfolio section end -->
+
+  <!-- cdn js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
 
 
-       <!-- my team section start -->
-       
-       <section>
-        <div class = "team text-center">
-          <h2 class = "fw-bold text-capitalize text-info"> My Amazing Team</h2>
-          <hr class ="w-25 mx-auto border-3 opacity-75">
-
-          <div class="container">
-            <div class ="row">
-              <div class="col-4">
-
-                <img src="{% static 'images/mil.jpeg' %}"   class="img-fluid team_img" alt="">
-                  
-                <h3>Er. Milan Magrati</h3>
-                <p>Python Developer</p>
-
-                <div>
-                  <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
-                  <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
-
-                </div>
-              
-
-              </div>
-
-                  <div class="col-4">
-
-                <img src="{% static 'images/mil.jpeg' %}"   class="img-fluid team_img" alt="">
-                  
-                <h3>Er. Milan Magrati</h3>
-                <p>Python Developer</p>
-
-                <div>
-                  <button class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button>
-                  <button class="btn btn-outline-primary"><i class="fa-brands fa-instagram"></i></i></button>
-
-                </div>
-              
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-       </section>
-
-
-       <!-- my team section end -->
-
-
-     <!-- cdn js link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

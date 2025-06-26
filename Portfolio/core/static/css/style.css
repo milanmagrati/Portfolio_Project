@@ -44,3 +44,21 @@ h1{
     
 
 }
+
+.service_image{
+
+    height: 90vh;
+    object-fit: cover;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: red;
+  --bs-tooltip-color: blue;
+}
+
+.ho{
+
+    box-shadow:3px 3px  100px red;
+    border-radius: 20px;
+
+}
